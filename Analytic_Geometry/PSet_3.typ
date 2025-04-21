@@ -1,8 +1,5 @@
 #let rank = "rank"
 
-
-
-
 #set page(numbering: "1")
 
 #align(right, text(12pt)[
@@ -18,10 +15,10 @@
   #datetime.today().display("[day]/[month]/[year]")
 ])
 
-= Questão 1 (Introdutorios)
+= Questão 1 (Introdutórios)
 
 #rect(width: auto, height: auto)[
-Use o Teorema de Rouché-Frobenius para determinar se os seguintes sistemas lineasres são Possíveis e Determinados, Possíveis e Indeterminados ou Impossíveis:
+Use o Teorema de Rouché-Frobenius para determinar se os seguintes sistemas lineares são Possíveis e Determinados, Possíveis e Indeterminados ou Impossíveis:
 
 == a)
 
@@ -53,11 +50,11 @@ $
   )
 $
 
-Apos escalonamento (faca as contas), concluimos que o sistema possivel e determinado, pois $rank(A) = rank(A|b) = 3$.
+Após escalonamento (faça as contas), concluímos que o sistema é possível e determinado, pois $rank(A) = rank(A|b) = 3$.
 
 == b)
 
-Analogamente ao item anterior, a matriz e:
+Analogamente ao item anterior, a matriz é:
 
 $
   mat(
@@ -67,9 +64,9 @@ $
   )
 $
 
-E apos escalonamento (faca as contas), concluimos que o sistema e possivel e determinado
+E após escalonamento (faça as contas), concluímos que o sistema é possível e determinado.
 
-= Questao 2(Introdutorios)
+= Questão 2 (Introdutórios)
 
 #rect(width: auto, height: auto)[
 
@@ -96,7 +93,7 @@ $
 
 == a)
 
-A matriz do sistema é (nao-aumentada):
+A matriz do sistema é (não-aumentada):
 $
   mat(
     1, -1, 2;
@@ -104,10 +101,10 @@ $
     -3, 2, -1;
   )
 $
-Apos escalonamento (faca as contas), concluimos que o determinante da matriz e $21 + 3 k$, logo, o sistema e possivel e determinado se $k != -7$. Para $k = -7$, o sistema e impossivel, pois $rank(A) = 2, rank(A|b) = 3$ (faca as contas).
+Após escalonamento (faça as contas), concluímos que o determinante da matriz é $21 + 3 k$, logo, o sistema é possível e determinado se $k != -7$. Para $k = -7$, o sistema é impossível, pois $rank(A) = 2, rank(A|b) = 3$ (faça as contas).
 
 == b)
-A matriz do sistema é (nao-aumentada):
+A matriz do sistema é (não-aumentada):
 
 $
   mat(
@@ -117,9 +114,9 @@ $
   )
 $
 
-Apos escalonamento (faca as contas), concluimos que o determinante da matriz e $k + 2$, logo, o sistema e possivel e determinado se $k != -2$. Para $k = -2$, o sistema e impossivel, pois $rank(A) = 2,rank(A|b) = 2$ (faca as contas).
+Após escalonamento (faça as contas), concluímos que o determinante da matriz é $k + 2$, logo, o sistema é possível e determinado se $k != -2$. Para $k = -2$, o sistema é impossível, pois $rank(A) = 2, rank(A|b) = 2$ (faça as contas).
 
-= Questao 3 (Introdutorios)
+= Questão 3 (Introdutórios)
 
 #rect(width: auto, height: auto)[
 Mostre que as matrizes coluna a seguir são linearmente dependentes:
@@ -131,15 +128,15 @@ $
 
 = Solution:
 
-os vetores $A,B,C$ sao linearmente dependentes se $exists lambda_1, lambda_2, lambda_3 in RR without 0$ s.t:
+Os vetores $A,B,C$ são linearmente dependentes se $exists lambda_1, lambda_2, lambda_3 in RR without 0$ s.t:
 
 $
   lambda_1 A + lambda_2 B + lambda_3 C = 0
 $
 
-Ou, equivalentemente, se a matriz formada pelos vetores $A,B,C$ nao tem posto completo, ou seja, se $rank(A,B,C) < 3$.
+Ou, equivalentemente, se a matriz formada pelos vetores $A,B,C$ não tem posto completo, ou seja, se $rank(A,B,C) < 3$.
 
-A matriz formada pelos vetores $A,B,C$ e:
+A matriz formada pelos vetores $A,B,C$ é:
 
 $
   mat(
@@ -148,9 +145,9 @@ $
     2, 1, 4;
   )
 $
-Apos escalonamento (faca as contas), concluimos que o posto da matriz e $2 < 3$, logo os vetores sao _LD_.
+Após escalonamento (faça as contas), concluímos que o posto da matriz é $2 < 3$, logo os vetores são _LD_.
 
-= Questao 4 (Introdutorios)
+= Questão 4 (Introdutórios)
 
 #rect(width: auto, height: auto)[
 Verificar que os seguintes sistemas de equações são, respectivamente, Determinado, Indeterminado e Impossível:
@@ -183,7 +180,7 @@ $
 = Solution:
 
 == a)
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
   mat(
@@ -193,11 +190,11 @@ $
   )
 $
 
-Apos escalonamento (faca as contas), concluimos que o sistema e possivel e determinado, pois $rank(A) = rank(A|b) = 3$.
+Após escalonamento (faça as contas), concluímos que o sistema é possível e determinado, pois $rank(A) = rank(A|b) = 3$.
 
 == b)
 
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
 
@@ -208,11 +205,11 @@ $
   )
 $
 
-Apos escalonamento (faca as contas), concluimos que o sistema e possivel e indeterminado, pois $rank(A) = rank(A|b) = 2$.
+Após escalonamento (faça as contas), concluímos que o sistema é possível e indeterminado, pois $rank(A) = rank(A|b) = 2$.
 
 == c)
-=
-A matriz do sistema e:
+
+A matriz do sistema é:
 
 $
   mat(
@@ -222,10 +219,10 @@ $
   )
 $
 
-Apos escalonamento (faca as contas), concluimos que o sistema e impossivel, pois $rank(A) = 2, rank(A|b) = 3$.
+Após escalonamento (faça as contas), concluímos que o sistema é impossível, pois $rank(A) = 2, rank(A|b) = 3$.
 
 
-= Questao 1 (Aprofundamento)
+= Questão 1 (Aprofundamento)
 
 #rect(width: auto, height: auto)[
 Discutir o seguinte sistema de acordo com os valores de $k$:
@@ -238,7 +235,7 @@ $
 
 = Solution:
 
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
   mat(
@@ -247,9 +244,9 @@ $
   )
 $
 
-Cujo determinante e $1 - k^2$, com $k != plus.minus 1$, $rank(A) = 2$, logo o sistema e possivel e determinado. Se $k = 1$, ambas as equacoes se reduzem a $x - y = 1$, o que tem infinitas solucoes. Se $k = -1$, o sistema se reduz a $x + y = 1$ e $x + y = 2$, o que e impossivel.
+Cujo determinante é $1 - k^2$, com $k != plus.minus 1$, $rank(A) = 2$, logo o sistema é possível e determinado. Se $k = 1$, ambas as equações se reduzem a $x - y = 1$, o que tem infinitas soluções. Se $k = -1$, o sistema se reduz a $x + y = 1$ e $x + y = 2$, o que é impossível.
 
-= Questao 2 (Aprofundamento)
+= Questão 2 (Aprofundamento)
 
 #rect(width: auto, height: auto)[
 
@@ -278,7 +275,7 @@ Resolver o sistema para $a = 0$.
 
 == a)
 
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
   mat(
@@ -287,15 +284,15 @@ $
     2, 2 + a, 6;
   )
 $
-Para $a = 2$, as linhas 1 e 2 se tornam iguais, logo o determinante zera e o sistema se torna impossivel
+Para $a = 2$, as linhas 1 e 2 se tornam iguais, logo o determinante zera e o sistema se torna impossível.
 
 == b)
 
-Usando a mesma matriz (descrita em no item anterior), note que o rank da matriz nunca e completo, logo o sistema nunca e possivel e determinado (faca as contas).
+Usando a mesma matriz (descrita no item anterior), note que o rank da matriz nunca é completo, logo o sistema nunca é possível e determinado (faça as contas).
 
 == c)
 
-O sistema de equacoes e:
+O sistema de equações é:
 
 $
   x + 2y + 3z = 1\ 
@@ -303,9 +300,9 @@ $
   2x + 2 y + 6z = 3
 $
 
-Esse sistema possui infinitas solucoes (verifique!).
+Esse sistema possui infinitas soluções (verifique!).
 
-= Questao 3 (Aprofundamento)
+= Questão 3 (Aprofundamento)
 
 #rect(width: auto, height: auto)[
 (Exercício Opcional) Dadas as matrizes:
@@ -346,7 +343,7 @@ Para $alpha = 3$ e $beta = -13$, estudar o sistema $A X = C_1 + C_2$).
 = Solution:
 
 == a)
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
   mat(
@@ -356,10 +353,10 @@ $
   )
 $
 
-Apos escalonamento (faca as contas), concluimos que o determinante da matriz e $2 + alpha$, entao quando $alpha = -2$, o sistema e impossivel.
+Após escalonamento (faça as contas), concluímos que o determinante da matriz é $2 + alpha$, então quando $alpha = -2$, o sistema é impossível.
 
 == b)
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
   mat(
@@ -369,12 +366,12 @@ $
   )
 $
 
-Escalonando a matriz, concluimos que o sistema e possivel com $beta = -13$
+Escalonando a matriz, concluímos que o sistema é possível com $beta = -13$.
 
 
 == c)
 
-A matriz do sistema e:
+A matriz do sistema é:
 
 $
   mat(
@@ -384,6 +381,190 @@ $
   )
 $
 
-Apos escalonamento, concluimos que o sistema e impossivel (verifique!).
+Após escalonamento, concluímos que o sistema é impossível (verifique!).
 
 
+= Questão 4 (Aprofundamento)
+
+#rect(width: auto, height: auto)[
+Discutir e resolver os seguintes sistemas:
+== a)
+
+$
+  a x + y + z = 1\ 
+  x + a y + z = b\ 
+  x + y + a z = 1
+$
+
+== b)
+
+$
+  x + 2z = 3\ 
+  3x + y + z = -1\ 
+  2y - z = -2\ 
+  x - y + a z = -5
+$
+]
+
+= Solution:
+
+== a)
+
+A matriz do sistema é:
+
+$
+  mat(
+    a, 1, 1;
+    1, a, 1;
+    1, 1, a;
+  )
+$
+
+Note que se $a = 1$, todas as linhas são iguais e o sistema é válido somente se $b = 1$, tendo infinitas soluções. Se $a != 1$, o determinante é $a^3 - 3 a^2 + 3 a - 1 = (a - 1)^3$.
+
+Se $a = -2$ e $b = -2$, existem infinitas soluções. (verifique!)
+
+== b)
+
+A matriz do sistema é:
+
+$
+  mat(
+    1, 0, 2;
+    3, 1, 1;
+    0, 2, -1;
+    1, -1, a;
+  )
+$
+
+Após escalonamento (faça as contas), concluímos que se $a = -2$, temos uma solução única, caso contrário o sistema é impossível. (verifique!)
+
+
+= Questão 5 (Opcional) (Aprofundamento)
+
+#rect(width: auto, height: auto)[
+Três tipos de suplementos alimentares estão sendo desenvolvidos. Para cada grama de ração, tem-se que:
+
+- O suplemento 1 tem 1 unidade de vitamina A, 3 unidades de vitamina B e 4 unidades de vitamina C;
+
+- O suplemento 2 tem 2, 3, e 5 unidades das vitaminas A, B, e C, respectivamente;
+
+- O suplemento 3 tem 3 unidades das vitaminas A e C, e não contém vitamina B.
+
+São necessárias 11 unidades de vitamina A, 9 de vitamina B, e 20 de vitamina C, encontre todas as possíveis quantidades dos suplementos 1, 2, e 3, que fornecem a quantidade de vitaminas desejada.
+
+== a)
+
+Qual o sistema homogêneo associado?
+
+== b)
+
+O sistema homogêneo associado aceita solução não nula?
+
+== c)
+
+Qual a relação entre a resposta dos itens anteriores? 
+
+== d)
+
+Se o suplemento 1 custa 6 reais por grama e os outros dois custam 1, existe uma solução custando exatamente 10 reais?
+]
+
+= Solution:
+
+== a)
+
+Seja x a quantidade de suplemento 1, y a quantidade de suplemento 2 e z a quantidade de suplemento 3. O sistema original é:
+
+$
+  x + 2y + 3z = 11\
+  3x + 3y + 0z = 9\
+  4x + 5y + 3z = 20
+$
+
+E o sistema homogêneo associado é:
+
+$
+  x + 2y + 3z = 0\
+  3x + 3y + 0z = 0\
+  4x + 5y + 3z = 0
+$
+
+== b)
+
+A matriz do sistema é:
+
+$
+  mat(
+    1, 2, 3;
+    3, 3, 0;
+    4, 5, 3;
+  )
+$
+
+Após escalonamento (faça as contas), concluímos que o posto da matriz é $2$, logo o sistema admite soluções não nulas.
+
+== c)
+
+A existência de soluções não nulas para o sistema homogêneo indica que o sistema original não possui solução única. De fato, se o sistema homogêneo tem soluções não nulas, então o sistema original ou não tem solução ou tem infinitas soluções.
+
+== d)
+
+A restrição adicional é $6x + y + z = 10$, vamos resolver agora o sistema completo:
+
+$
+  x + 2y + 3z = 11 "(vitamina A)"\
+  3x + 3y + 0z = 9 "(vitamina B)"\
+  4x + 5y + 3z = 20 "(vitamina C)"\
+  6x + y + z = 10 "(custo)"
+$
+
+Após umas maracutaias selvagens, obtemos:
+
+$
+  x = 1\
+  y = 2\
+  z = 2
+$
+
+É a solução custando exatamente 10 unidades de real.
+
+= Questão 1 (Avançados/Teóricos)
+
+#rect(width: auto, height: auto)[
+Demonstre que qualquer subconjunto não vazio de um conjunto de matrizes linearmente independentes ${A_1, dots , A_n}$ é também linearmente independente.
+]
+
+= Solution:
+
+Se $A = {A_1, dots, A_n}$ é _LI_, então:
+
+$
+  sum_(i =1)^n lambda_i A_i = 0 <=> lambda_i = 0
+$
+
+Suponha agora que exista $K subset A = {A_k_1, .. A_k_m}$ _LD_, ou seja:
+
+$
+  sum_(i =1)^m lambda_i A_k_i = 0 "com um" lambda_phi != 0
+$
+
+Então daí concluímos que:
+
+$
+  A_k_phi = (-sum_(i != phi) lambda_i A_k_i) / lambda_phi
+$
+
+Isso em $A$ é um absurdo, pois o conjunto deixaria de ser _LI_. Logo não existe tal $K$.
+
+= Questão 2 (Avançados/Teóricos)
+
+#rect(width: auto, height: auto)[
+Ache matrizes $A$ e $B$ para as quais $rank(A) = rank(B)$, porém $rank(A^2) != rank (B^2)$.
+]
+
+= Solution:
+
+Tome $A = mat(0, 1; 0, 0)$ e $B = mat(1, 0; 0, 0)$.
+
+Note que $rank(A) = rank(B) = 1$, porém $rank(A^2) = 0$ e $rank(B^2) = 1$.
