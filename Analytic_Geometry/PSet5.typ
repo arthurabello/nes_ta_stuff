@@ -18,7 +18,7 @@
 = Problem 1 (Introductory)
 
 #rect(width: auto, height: auto)[
-Calculate the determinant of the matrix $A$ below using Sarrus’s rule:
+Calculate the determinant of the matrix $A$ below using Sarrus's rule:
 
 $
   A = mat(
@@ -142,7 +142,7 @@ The trace is $-1 - 2 - 3 = -6$.
 If $det(A) = -3$, find:
 - $det(A^2)$
 - $det(A^3)$
-- $det(A^-1)$
+- $det(A^(-1))$
 - $det(A^T)$
 ]
 
@@ -154,21 +154,21 @@ Since $det(A dot B) = det(A) dot det(B)$, and $det(A) = det(A^T)$ we have:
 
 - $det(A^3) = det(A) dot det(A) dot det(A) = (-3) dot (-3) dot (-3) = -27$.
 
-- $det(A^-1) = 1/ {det(A)} = 1 / (-3)$.
+- $det(A^(-1)) = 1/ det(A) = 1 / (-3)$.
 
 - $det(A^T) = det(A) = -3$.
 
 = Problem 4
 
 #rect(width: auto, height: auto)[
-If $A$ and $B$ are $n times n$ matrices such that $det(A) = -2$ and $det(B) = 3$, calculate $det(A^T dot B^-1)$
+If $A$ and $B$ are $n times n$ matrices such that $det(A) = -2$ and $det(B) = 3$, calculate $det(A^T dot B^(-1))$
 ]
 
 = Solution
 
 We have:
 $
-  det(A^T dot B^-1) = det(A^T) dot det(B^-1) = det(A) dot 1 / {det(B)} = -2 / 3.
+  det(A^T dot B^(-1)) = det(A^T) dot det(B^(-1)) = det(A) dot 1 / det(B) = -2 / 3.
 $
 
 
@@ -379,7 +379,7 @@ $det(A + B) = det(A) + det(B)$
 It is True:
 
 $
-  det(A) = det(A A^T A^(-1)) = det(A) dot det(A^T) dot det(A^(-1)) = det(A) dot det(A) dot 1 / {det(A)} = det(A).
+  det(A) = det(A A^T A^(-1)) = det(A) dot det(A^T) dot det(A^(-1)) = det(A) dot det(A) dot 1 / det(A) = det(A).
 $
 
 == b)
